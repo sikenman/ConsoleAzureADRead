@@ -69,5 +69,28 @@ namespace AzureADRead
 
         }
 
+        private static void AzureDeviceAuth(string clientId, string tenantId)
+        {
+            var scopes = new[] { "User.Read" };
+        
+            // Multi-tenant apps can use "common",
+            // single-tenant apps must use the tenant ID from the Azure portal
+            //var tenantId = "common";
+        
+            var options = new DeviceCodeCredentialOptions
+            {
+                AuthorityHost = AzureAuthorityHosts.AzurePublicCloud,
+                ClientId = clientId,
+                TenantId = tenantId,
+                // Callback function that receives the user prompt
+                // Prompt contains the generated device code that user must
+                // enter during the auth process in the browser
+                DeviceCodeCallback = (code, cancellation) =>
+                {
+                    Console.WriteLine(code.Message);
+                    return Task.FromResult(0);
+                },
+            };
+        }
     }
 }
