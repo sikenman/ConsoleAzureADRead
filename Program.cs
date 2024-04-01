@@ -12,7 +12,7 @@ namespace AzureADRead
             // Values from app registration
             var clientId = "da956ff6-f52d-40c5-b1ff-c1332380e6fb"; // Azure AD App Registration's Application (client) ID
             var tenantId = "0ac52edc-a605-4545-861a-50db3b521de4"; // Azure AD tenant ID
-            var clientSecret = "nBg8Q~KEvMndPIKc7ikhjVlSngiOauzYmhmqqbs_";
+            var clientSecret = "your-client-sercets";
 
             string UserID = "e30effdc-b79b-492f-8d6f-0bd2f4bd7f86";     // User1 (belongs to 2 Groups)
             //string UserID = "008c6c9c-eb11-4af7-8747-7d6269c4a5e5";   // User2 (belongs to 3 Groups)
