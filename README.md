@@ -18,5 +18,6 @@ Get list of Group for give User in Azure AD (Microsoft Entra ID)
 [Add a member](https://learn.microsoft.com/en-us/graph/api/administrativeunit-post-members?view=graph-rest-1.0&tabs=csharp)
 
 ## Useful Tools
-[JSON Formatter]([https://jsonformatter.org/)
+[Azure Portal](https://portal.azure.com/#home)
+[JSON Formatter](https://jsonformatter.org/)
 
