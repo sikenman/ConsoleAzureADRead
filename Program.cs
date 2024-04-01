@@ -32,6 +32,13 @@ namespace AzureADRead
 
             try
             {
+                // Get User Details
+                await Console.Out.WriteLineAsync("\nUser Details:");
+                var user = await graphClient.Users[UserID].GetAsync();
+                await Console.Out.WriteLineAsync(user.Id + ":" + user.DisplayName);
+                string UD = JsonConvert.SerializeObject(user);
+                Console.WriteLine(UD);
+                
                 // Get User Groups where he belongs to
                 var result = await graphClient.Users[UserID].MemberOf.GetAsync((requestConfiguration) =>
                 {
