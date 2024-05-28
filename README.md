@@ -33,8 +33,3 @@ Get list of Group for give User in Azure AD (Microsoft Entra ID)
 
 
 ## ExtraX
- https://www.ucumberlands.edu/academics/registrar
- https://cumberlands.onelogin.com/
- ?dongol44980@ucumberlands.edu
- https://ucumberlands.radiusbycampusmgmt.com/ssc/zx670mA867020x6702fM03F.ssc
-??3044980
